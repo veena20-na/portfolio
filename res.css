@@ -1,0 +1,173 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+.resume-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00c6ff;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background: #007acc;
+  color: #fff;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00c6ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skills .skill:hover {
+  transform: scale(1.03);
+  background: rgba(0, 198, 255, 0.2);
+}
+
+.skills .percentage {
+  font-weight: bold;
+  color: #00c6ff;
+  font-size: 1rem;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+.projects a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+.contact a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .resume-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .skills .skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills .percentage {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .resume-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills .skill {
+    padding: 8px 10px;
+  }
+}
